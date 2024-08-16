@@ -51,7 +51,7 @@
     "@types/supertest": "^6.0.2",
     "@types/uuid": "^9.0.8",
     "@types/ws": "^8.5.10",
-    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/eslint-plugin": "^8.1.0",
     "@typescript-eslint/parser": "^6.18.1",
     "eslint": "^8.54.0",
     "eslint-config-airbnb-typescript": "^17.1.0",
