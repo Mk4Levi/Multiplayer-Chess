@@ -1,0 +1,32 @@
+version: '3'
+services:
+  nginx:
+    ports:
+      - "80:80"
+
+  backend:
+    deploy:
+      replicas: 1
+      restart_policy: 
+        condition: any
+      update_config:
+        parallelism: 1
+        delay: 60s
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
+      target: production    
+    environment:
+      - MONGO_USER=${MONGO_USER}
+      - MONGO_PASSWORD=${MONGO_PASSWORD}
+      - MONGO_IP=${MONGO_IP}
+      - MONGO_PORT=${MONGO_PORT}
+      - REDIS_HOST=${REDIS_HOST}
+      - REDIS_PORT=${REDIS_PORT}
+      - REDIS_USERNAME=${REDIS_USERNAME}
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+      - SESSION_SECRET=${SESSION_SECRET}
+      - ALLOWED_ORIGIN=${ALLOWED_ORIGIN}
+      - NODE_ENV=production
+      
+    command: npm start
