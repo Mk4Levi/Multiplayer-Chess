@@ -34,7 +34,7 @@
     "passport-local": "^1.0.0",
     "redis": "^4.6.12",
     "uuid": "^9.0.1",
-    "ws": "^8.16.0"
+    "ws": "^8.18.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.4",
@@ -50,7 +50,7 @@
     "@types/passport-local": "^1.0.38",
     "@types/supertest": "^6.0.2",
     "@types/uuid": "^9.0.8",
-    "@types/ws": "^8.5.10",
+    "@types/ws": "^8.5.12",
     "@typescript-eslint/eslint-plugin": "^6.16.0",
     "@typescript-eslint/parser": "^6.18.1",
     "eslint": "^8.54.0",
